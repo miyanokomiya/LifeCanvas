@@ -361,6 +361,8 @@ define(function(require) {
 				// ループ再開
 				self.startLoop();
 			}
+			
+			isLoop = false;
 		});
 	};
 
