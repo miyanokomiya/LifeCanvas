@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+
+		<script type="text/javascript" src="./dest/LifeCanvas.js"></script>
+		<script>
+window.onload = function() {
+	var main = new LifeCanvas("main", {
+		width : 600,
+		height : 300,
+		stepFrame : 150
+	});
+
+	var sub = new LifeCanvas("sub", {
+		width : 300,
+		height : 150,
+		rowCount : 15,
+		columnCount : 20
+	});
+};
+		</script>
+	</head>
+	<body>
+
+		<div id="main"></div>
+
+		<div id="sub"></div>
+
+	</body>
+</html>
