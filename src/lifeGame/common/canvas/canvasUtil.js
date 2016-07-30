@@ -173,10 +173,16 @@ define(function(require) {
 				event = event.touches[0];
 			}
 
+			var rect = event.target.getBoundingClientRect();
+
+			// 要素の位置座標を計算
+			var positionX = rect.left + window.pageXOffset;
+			var positionY = rect.top + window.pageYOffset;
+
 			// ターゲット上の座標取得
 			p = {
-				x : event.pageX  - event.target.offsetLeft,
-				y : event.pageY  - event.target.offsetTop
+				x : event.pageX  - positionX,
+				y : event.pageY  - positionY
 			};
 
 			return p;
