@@ -5,7 +5,10 @@ var webpack = require("webpack");
 module.exports = {
 	entry: './src/lifeGame/webpackMain.js',
 	output: {
-		filename: './dest/LifeCanvas.js'
+		path: './dest/',
+		filename: 'LifeCanvas.js',
+		library: 'LifeCanvas',
+		libraryTarget: 'umd'
 	},
 	module: {
 		loaders: [

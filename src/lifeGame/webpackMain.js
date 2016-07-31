@@ -4,5 +4,7 @@
  * license MIT
  */
 
-var App = require("lifeGame/App");
-window.LifeCanvas = App;
+define(function(require) {
+	var App = require("lifeGame/App");
+	return App;
+});
